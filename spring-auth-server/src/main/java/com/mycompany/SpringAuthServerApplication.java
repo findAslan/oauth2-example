@@ -186,7 +186,7 @@ public class SpringAuthServerApplication {
 					.authorizedGrantTypes("authorization_code")
 					.authorities("ROLE_CLIENT").scopes("read", "trust")
 					.resourceIds("oauth2-resource")
-					.redirectUris("http://anywhere?key=value").and()
+					.redirectUris("http://localhost:8088/client/").and()
 					.withClient("my-client-with-secret")
 					.authorizedGrantTypes("client_credentials", "password")
 					.authorities("ROLE_CLIENT", "ROLE_TRUSTED_CLIENT").scopes("read")
